@@ -1,17 +1,21 @@
 <template>
-    <li>{{book.title}:{{book.author}}
+    <li>({{book.title}}:{{book.author}})
         
     </li>
 </template>
 
 <script>
-export default{
-    name: 'BookItem',
-    props: [
-        'book'
-    ]
-}
+    export default {
+  name: 'book-item',
+  data() {
+    return {
+      props: ['book']
+    }
+  }
+    }
+
 </script>
+
 <style scoped>
 li {
   display: block;

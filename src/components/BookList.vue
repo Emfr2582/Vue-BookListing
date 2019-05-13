@@ -2,18 +2,18 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
-   <BookItem v-for="book in books" :book='book'></BookItem>
+   <book-item v-for="book in books" :book='book'></book-item>
     </ul>
   </div>
 </template>
 
 <script>
-import BookItem from './BookItem';
+import BookItem from './BookItem'
 
 export default {
-  name: "BookList",
+  name: 'BookList',
   components: {
-    BookItem: {}
+    BookItem
   },
   data() {
     return {
@@ -22,10 +22,10 @@ export default {
         { title: "Self-Reliance", author: "Ralph Waldo Emerson" },
         { title: "American Gods", author: "Neil Gaiman" },
         { title: "Amusing Ourselves to Death", author: "Neil Postman" }
-      ],
+      ]
     }
   }
-};
+}
 </script>
 <style scoped>
 h1,
