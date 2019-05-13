@@ -19,7 +19,7 @@ export default {
     BookForm
   },
   methods:{
-    appendBook: 'bookTitle', 'bookAuthor'
+    appendBook (bookTitle, bookAuthor)
   },
   data(){
     return {
