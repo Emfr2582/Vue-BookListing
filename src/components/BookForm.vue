@@ -17,14 +17,11 @@ data(){
     bookAuthor: ''
     }
 },
-methods: function addBook(){
-    return
-this.$emit('addBook', bookTitle, bookAuthor);
-},
-function bookSubmit(bookTitle, bookAuthor){
-    return this.$emit('addBook', bookTitle, bookAuthor);
-
-}    
+methods: {
+bookSubmit(bookTitle, bookAuthor){
+    this.$emit('addBook', bookTitle, bookAuthor);
+}
+}
 }
 </script>
 <style scoped>
