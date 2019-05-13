@@ -18,9 +18,6 @@ export default {
     BookItem,
     BookForm
   },
-  methods:{
-    appendBook (bookTitle, bookAuthor)
-  },
   data(){
     return {
       title: "All Books",
@@ -31,7 +28,10 @@ export default {
       ]
     }
   },
-  
+   methods:{
+    appendBook (bookTitle, bookAuthor){
+     this.books.push({ title: bookTitle, author: bookAuthor })
+  }
 }
 </script>
 <style scoped>
