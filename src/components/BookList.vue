@@ -33,10 +33,10 @@ export default {
      this.books.push({ title: bookTitle, author: bookAuthor })
   }
 }
-</script>
+}</script>
+
 <style scoped>
-h1,
-h2 {
+h1,h2 {
   font-weight: normal;
 }
 ul {
@@ -45,4 +45,3 @@ ul {
 }
 
 </style>
-
