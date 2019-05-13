@@ -4,7 +4,7 @@
     <ul>
    <book-item v-for="book in books" :book='book'></book-item>
     </ul>
-    <book-form></book-form>
+    <book-form @addBook='appendBook'></book-form>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     BookItem,
     BookForm
   },
-  data() {
+  data(){
     return {
       title: "All Books",
       books: [
