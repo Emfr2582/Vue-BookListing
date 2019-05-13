@@ -18,6 +18,9 @@ export default {
     BookItem,
     BookForm
   },
+  methods:{
+    appendBook: 'bookTitle', 'bookAuthor'
+  },
   data(){
     return {
       title: "All Books",
@@ -27,7 +30,8 @@ export default {
         { title: "Amusing Ourselves to Death", author: "Neil Postman" }
       ]
     }
-  }
+  },
+  
 }
 </script>
 <style scoped>
