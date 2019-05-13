@@ -18,7 +18,12 @@ data(){
     }
 },
 methods: function addBook(){
+    return
 this.$emit('addBook', bookTitle, bookAuthor);
+},
+function bookSubmit(bookTitle, bookAuthor){
+    return this.$emit('addBook', bookTitle, bookAuthor);
+
 }    
 }
 </script>
